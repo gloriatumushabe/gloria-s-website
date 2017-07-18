@@ -1,0 +1,229 @@
+/*========================================================================
+             DEFAULT VALUES:
+             Font Family: Roboto Condensed
+             Greenish Blue: 34c6d3 (Buttons, Icons, Links, Lines and Backgrounds)
+             Steel Gray:    41464b (Headings)
+             Blue Bayoux:   64707b (Paragraphs)
+             White:         #fff   (Text With Black Backgrounds)
+             Black:         #000 
+
+
+
+
+
+========================================================================*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto Condensed", Merriweather, sans-serif;
+}
+p{
+    color:black;
+    font-size:16px;
+    font-weight:400;
+}
+
+h3 {
+    color:black;
+    text-transform: uppercase;
+}
+h2 {
+    color:white;
+    text-transform: lowercase;
+}
+
+
+/*CSS-Just for Grid Examples*/
+
+
+/*home========================================================================*/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url("../img/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    /* text-align: center;*/
+}
+
+#home-heading h3 {
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20 0 text-transform: uppercase;
+
+}
+/*=========================
+parallax GENERIC
+======================*/
+.bg-parallax
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+/*=========================
+BUTTONS GENERIC
+======================*/
+.btn-general{
+    border-color:white;
+    border-width: 2px;
+    border-radius: 0;
+    padding:12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight:400;
+    text-transform:uppercase
+    
+}
+.btn-white{
+    border-color:white;
+    color:white;
+    
+}
+.btn-white:hover,.btn-white:focus{
+    background-color:white;
+    color:slategray;
+}
+.btn-darkred{
+    border-color:darkred;
+    color:darkred;
+    
+}
+.btn-darkred:hover,.btn-darkred:focus{
+    background-color:darkred;
+    color:darkred;}
+
+#home-cover{
+    animation-delay: .1s;
+    animation-duration: .5s;
+    
+}
+
+#home-heading{
+    animation-delay: .5s;
+    animation-duration: .5s;
+
+    
+}
+#home-btn{
+    animation-delay: 1s;
+    animation-duration: .5s;
+    
+}
+}
+/*=========================
+CONTENT GENERIC
+======================*/
+.content-box{
+    padding:60px 0 60px 0;
+    
+}
+.content-title h3{
+    font-size:30px;
+    font-weight:400;
+    text-align:center;
+    margin: 0 0 30px 0;
+    
+}
+.content-title-underline {
+    width:30px;
+    height:3px;
+    background-color:darkred;
+    margin: 0 auto 30px auto;
+    
+}
+/*=========================
+SERVICES 
+======================*/
+
+
+.service-item {
+  padding:20px 0 20px 0;
+  margin-bottom:20px;
+  cursor: pointer;
+   
+}
+.service-item-icon {
+  color:darkred;
+  float:left;
+  padding:15px;
+  margin-right:25px;
+  width:75px;
+  height: 75px;
+  text-align: center;
+   
+}
+
+.service-item:hover .service-item-icon i{
+    color:white;
+    background-color: darkred;
+
+}
+
+.service-item-title h3{
+    font-size: 20px;
+    font-weight:400;
+    margin:0 0 0 10px 0;
+}
+.service-item-desc p{
+    margin: 0;
+    padding-left: 85px;
+}
+/*=========================
+educ
+======================*/
+#educ-bg-diagonal{
+    width:60%;
+    height:700px;
+    float:right;
+    background-image:url(../img/school.jpg);
+    border-left:200px solid white;
+    border-top:700px solid transparent;
+}
+
+#educ-content-box{
+    float:left;
+    height:700px;   
+}
+#educ-content-box-outer{
+    width:100;
+    height:700px; 
+    display: table;
+}
+#educ-content-box-inner{
+       display:table-cell;
+    vertical-align:middle;
+}
+#educ .content-title h3{
+   text-align: left;   
+}
+#educ .content-title-underline{
+    margin:0 0 30px 0;
+       
+}
+#educ-desc p{
+    margin-bottom: 30px;
+}
